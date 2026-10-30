@@ -1,253 +1,265 @@
-```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Portfolio</title>
-</head>
 
-<body>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles.css" />
 
-    <!-- HEADER AND NAVIGATION -->
-    <header id="home">
-        <h1>My Personal Portfolio</h1>
-        <p>Welcome to my portfolio website!</p>
+    <!-- Import Roboto Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <body>
+    <!-- HEADER AND NAVBAR -->
+    <header class="header" id="home">
+      <nav class="navbar">
+        <a href="#home" class="logo">MyPortfolio.</a>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <hr>
-
-    <!-- MAIN CONTENT -->
     <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-content">
+          <p class="hero-subtitle">WELCOME TO MY PORTFOLIO</p>
 
-        <!-- ABOUT SECTION -->
-        <section id="about">
-            <h2>About Me</h2>
+          <h1>Hello, I'm <span class="highlight">Nonso!</span></h1>
 
+          <p class="hero-description">
+            An aspiring web developer passionate about building beautiful and
+            useful websites.
+          </p>
+
+          <a href="#work" class="btn">Explore My Work</a>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="section about-section" id="about">
+        <div class="section-heading">
+          <p class="section-label">GET TO KNOW ME</p>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-text">
             <p>
-                Hello! My name is Alex, and I am an aspiring web developer.
-                I enjoy learning how to build websites using HTML and other
-                web technologies.
+              Hello! My name is Alex, and I am an aspiring web developer who
+              enjoys learning how websites are built.
             </p>
 
             <p>
-                My goal is to develop useful websites that solve real-world
-                problems. I am currently improving my programming skills
-                by working on practical projects.
+              I am currently learning HTML and CSS while developing practical
+              projects to improve my programming skills. My goal is to create
+              accessible, responsive, and user-friendly websites.
             </p>
 
             <h3>My Interests</h3>
 
-            <ul>
-                <li>Web development</li>
-                <li>Programming</li>
-                <li>Technology and innovation</li>
-                <li>Learning new skills</li>
+            <ul class="interests-list">
+              <li>Web Development</li>
+              <li>Programming</li>
+              <li>Technology and Innovation</li>
+              <li>Problem Solving</li>
             </ul>
+          </div>
 
+          <div class="video-card">
             <h3>My Introduction Video</h3>
 
-            <video width="400" controls>
-                <source src="introduction.mp4" type="video/mp4">
-                Your browser does not support the video element.
+            <video class="intro-video" controls>
+              <source src="introduction.mp4" type="video/mp4" />
+              Your browser does not support the video element.
             </video>
 
+            <p>Add your introduction video to this section.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- WORK SECTION -->
+      <section class="section work-section" id="work">
+        <div class="section-heading">
+          <p class="section-label">WHAT I'VE BEEN BUILDING</p>
+          <h2>My Projects</h2>
+
+          <p class="section-description">
+            Here are some projects I have created while learning web
+            development.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-number">01</div>
+            <h3>Restaurant Menu</h3>
+
             <p>
-                Replace the video file with a short video introducing yourself.
+              A simple restaurant webpage displaying food items, descriptions,
+              and contact information.
             </p>
-        </section>
 
-        <hr>
+            <span class="project-tag">HTML</span>
+          </article>
 
-        <!-- WORK SECTION -->
-        <section id="work">
-            <h2>My Work</h2>
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <h3>Personal Portfolio</h3>
 
             <p>
-                Here are some projects I have worked on or plan to build
-                as I continue learning web development.
+              A personal website showcasing my background, interests, skills,
+              and projects.
             </p>
 
-            <article>
-                <h3>Project 1: Restaurant Menu</h3>
-                <p>
-                    A simple webpage displaying restaurant food items,
-                    descriptions, and a contact link.
-                </p>
-            </article>
+            <span class="project-tag">HTML & CSS</span>
+          </article>
 
-            <article>
-                <h3>Project 2: Personal Portfolio</h3>
-                <p>
-                    A personal website showcasing my background,
-                    interests, skills, and projects.
-                </p>
-            </article>
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <h3>Contact Form</h3>
 
-            <article>
-                <h3>Project 3: Contact Form</h3>
-                <p>
-                    A webpage containing a form that allows visitors
-                    to enter their names, email addresses, and messages.
-                </p>
-            </article>
+            <p>
+              A contact form that collects visitor names, email addresses,
+              subjects, and messages.
+            </p>
 
-            <h3>My Skills</h3>
+            <span class="project-tag">HTML Forms</span>
+          </article>
+        </div>
+      </section>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Level</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
+      <!-- RESUME SECTION -->
+      <section class="section resume-section" id="resume">
+        <div class="section-heading">
+          <p class="section-label">MY BACKGROUND</p>
+          <h2>Resume & Skills</h2>
+        </div>
 
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Beginner</td>
-                        <td>Learning</td>
-                    </tr>
-
-                    <tr>
-                        <td>CSS</td>
-                        <td>Beginner</td>
-                        <td>To Be Improved</td>
-                    </tr>
-
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Beginner</td>
-                        <td>Future Learning</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
-
-        <!-- RESUME SECTION -->
-        <section id="resume">
-            <h2>My Resume</h2>
-
+        <div class="resume-content">
+          <div class="resume-card">
             <h3>Education</h3>
 
             <p>
-                I am currently developing my technical skills through
-                practical exercises, personal projects, and online learning.
+              I am developing my technical skills through practical exercises,
+              personal projects, and online learning.
             </p>
+          </div>
 
+          <div class="resume-card">
             <h3>Experience</h3>
 
             <p>
-                I have been practising HTML by building simple webpages,
-                including a restaurant menu and this portfolio website.
+              I have practised building webpages, creating navigation menus,
+              organising content, and designing forms using HTML.
             </p>
+          </div>
 
+          <div class="resume-card">
             <h3>Technical Skills</h3>
 
-            <ol>
-                <li>Writing HTML documents</li>
-                <li>Creating links and navigation menus</li>
-                <li>Building forms and tables</li>
-                <li>Embedding multimedia elements</li>
-            </ol>
+            <ul class="skills-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Responsive Design</li>
+              <li>Git and GitHub</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-            <p>
-                <a href="#contact">Contact me about opportunities</a>
-            </p>
-        </section>
+      <!-- CONTACT SECTION -->
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="section-label">LET'S CONNECT</p>
+          <h2>Contact Me</h2>
 
-        <hr>
+          <p class="section-description">
+            Have a question or a project idea? Send me a message.
+          </p>
+        </div>
 
-        <!-- CONTACT SECTION -->
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full Name</label>
 
-            <p>
-                Have a question or want to discuss a project?
-                Fill out the form below.
-            </p>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
 
-            <form action="#" method="post">
+          <div class="form-group">
+            <label for="email">Email Address</label>
 
-                <p>
-                    <label for="name">Full Name:</label><br>
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your full name"
-                        required>
-                </p>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
 
-                <p>
-                    <label for="email">Email Address:</label><br>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="Enter your email"
-                        required>
-                </p>
+          <div class="form-group">
+            <label for="subject">Subject</label>
 
-                <p>
-                    <label for="subject">Subject:</label><br>
-                    <input
-                        type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="Enter the subject"
-                        required>
-                </p>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="What is your message about?"
+              required
+            />
+          </div>
 
-                <p>
-                    <label for="message">Your Message:</label><br>
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="5"
-                        cols="40"
-                        placeholder="Write your message here"
-                        required></textarea>
-                </p>
+          <div class="form-group">
+            <label for="message">Your Message</label>
 
-                <button type="submit">Send Message</button>
-                <button type="reset">Clear Form</button>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
 
-            </form>
-        </section>
-
+          <button type="submit" class="btn submit-btn">Send Message</button>
+        </form>
+      </section>
     </main>
 
-    <hr>
-
     <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Alex's Portfolio. All rights reserved.</p>
+    <footer class="footer">
+      <p class="footer-logo">MyPortfolio.</p>
 
-        <p>
-            <a href="#home">Back to Top</a>
-        </p>
+      <p>Building my skills, one project at a time.</p>
 
-        <p>
-            Thank you for visiting my portfolio!
-        </p>
+      <a href="#home" class="back-to-top">Back to Top ↑</a>
+
+      <p class="copyright">
+        &copy; 2026 Nonso's Portfolio. All rights reserved.
+      </p>
     </footer>
-
-</body>
-
+  </body>
 </html>
-```
